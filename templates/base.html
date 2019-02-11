@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <title>EIS</title>
 </head>
 <body>
     <main>
-    {% block content %}
-    {% endblock %}
-  </main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1 class="mt-2">EIS</h1>
+                    <hr class="mt-0 mb-4">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
